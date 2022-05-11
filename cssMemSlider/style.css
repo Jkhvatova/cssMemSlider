@@ -1,0 +1,90 @@
+body {
+  height: 100vw;
+  color: white;
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  }
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  overflow: hidden;
+  width: 700px;
+  height: 410px;
+  border-radius: 6px;
+  margin-left: -64px;
+}
+.slides {
+  width: 800%;
+  height: 100%;
+  display: flex;
+  margin-left: -64px;
+}
+.slides input {
+  appearance: none;
+}
+.slide {
+  width: 12.5%;
+  transition: 1s;
+}
+.slide-img {
+  width: 700px;
+  height: 350px;
+  border-radius: 6px;
+}
+#eyes:checked~.first {
+  margin-left: 0;
+}
+#taskread:checked~.first {
+  margin-left: -12.5%;
+}
+#taskdemo:checked~.first {
+  margin-left: -25%;
+}
+#dive-in:checked~.first {
+  margin-left: -37.5%;
+}
+#console:checked~.first {
+  margin-left: -50%;
+}
+#dali:checked~.first {
+  margin-left: -62.5%;
+}
+#ready:checked~.first {
+  margin-left: -75%;
+}
+#student1:checked~.first {
+  margin-left: -87.5%;
+}
+
+
+ .slider-nav {
+  width: 700px;
+  display: flex;
+  justify-content: right;
+  margin-top: -40px;
+}
+
+.nav-btn {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.nav-btn:hover {
+  border: 2px solid pink;
+}
+.nav-btn:active {
+  background: white;
+}
+.nav-btn:checked {
+  background: white;
+}
+  .nav-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
