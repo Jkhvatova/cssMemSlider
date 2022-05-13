@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 body {
   height: 100vw;
   color: white;
@@ -5,17 +8,16 @@ body {
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   }
 .container {
-  margin-top: 40px;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slider {
   overflow: hidden;
-  width: 700px;
-  height: 410px;
-  border-radius: 6px;
-  margin-left: -64px;
+  width: 70em;
+  height: 42em;
+  border-radius: 0.6em;
 }
 .slider input {
   appearance: none;
@@ -24,7 +26,6 @@ body {
   width: 800%;
   height: 100%;
   display: flex;
-  margin-left: -64px;
 }
 
 .slide {
@@ -32,73 +33,81 @@ body {
   transition: 1s;
 }
 .slide-img {
-  width: 700px;
-  height: 350px;
-  border-radius: 6px;
+  width: 70em;
+  height: 35em;
+  border-radius: 0.6em;
 }
 .slide-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2rem;
+  font-size: 2em;
 }
+
 #eyes:checked~ .slides{
   margin-left: 0;
+  transition: 1s;
 }
 #taskread:checked~ .slides {
-  margin-left: -12.5%;
+  margin-left: -100%;
+  transition: 1s;
 }
 #taskdemo:checked~ .slides {
-  margin-left: -25%;
+  margin-left: -200%; 
+  transition: 1s;
 }
 #dive-in:checked~ .slides {
-  margin-left: -37.5%;
+  margin-left: -300%;
+  transition: 1s;
 }
 #console:checked~ .slides {
-  margin-left: -50%;
+  margin-left: -400%;
+  transition: 1s;
 }
 #dali:checked~ .slides {
-  margin-left: -62.5%;
+  margin-left: -500%;
+  transition: 1s;
 }
 #ready:checked~ .slides {
-  margin-left: -75%;
+  margin-left: -600%;
+  transition: 1s;
 }
 #student1:checked~ .slides {
-  margin-left: -87.5%;
+  margin-left: -700%;
+  transition: 1s;
 }
 
 
  .slider-nav {
-  width: 700px;
-  height: 40px;
+  width: 70em;
+  height: 4em;
   display: flex;
   justify-content: right;
-  margin-top: -40px;
-  background-color: #2b4162;
+  margin-top: -4em;
 }
 
 .nav-btn {
-  border: 1px solid white;
-  width: 10px;
-  height: 10px;
-  padding: 5px;
-  border-radius: 10px;
+  border: 0.1em solid white;
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  border-radius: 1em;
   cursor: pointer;
   transition: 1s;
 }
 .nav-btn:hover {
-  border: 2px solid pink;
+  border: 0.1em solid pink;
   background: white;
 }
   .nav-btn:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
-#eyes:checked ~ .slider-nav label:nth-of-type(1),
-#taskread:checked ~ .slider-nav label:nth-of-type(2),
-#taskdemo:checked ~ .slider-nav label:nth-of-type(3),
-#dive-in:checked ~ .slider-nav label:nth-of-type(4),
-#console:checked ~ .slider-nav label:nth-of-type(5),
-#dali:checked ~ .slider-nav label:nth-of-type(6),
-#ready:checked ~ .slider-nav label:nth-of-type(7),
-#student1:checked ~ .slider-nav label:nth-of-type(8) {
-	background: red;
+#eyes:checked ~ .slider-nav #btn1,
+#taskread:checked ~ .slider-nav #btn2,
+#taskdemo:checked ~ .slider-nav #btn3,
+#dive-in:checked ~ .slider-nav #btn4,
+#console:checked ~ .slider-nav #btn5,
+#dali:checked ~ .slider-nav #btn6,
+#ready:checked ~ .slider-nav #btn7,
+#student1:checked ~ .slider-nav #btn8 {
+	background: pink;
 }
