@@ -28,6 +28,8 @@ body {
 }
 .slider input {
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 .slides, .slide-text-area {
   width: 800%;
